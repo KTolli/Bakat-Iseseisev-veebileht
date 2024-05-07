@@ -1,0 +1,474 @@
+body {
+  min-width: 100vh;
+  margin: 0px;
+  background-color: #d7d3cc;
+  font-family: "Maven Pro", sans-serif;
+}
+
+/* Veebilehe sisu - kõikidel lehtedel  */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  background-color: #81a454;
+  min-height: 150px;
+  border-radius: 10px;
+  margin: 7px 7px 2px 7px;
+}
+
+
+.header-line {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  padding-left: 96px;
+  justify-content: right;
+  align-items: center;
+}
+
+.temp{
+  margin-bottom: -10px;
+  margin-left: 15px;
+  font-size: 48px;
+  color: #fff;
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-right: 60px;
+}
+
+.meist-center {
+  height: 100%;
+  display: flex;
+}
+
+.center-line {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 130px;
+  padding: 0px 120px 0px 120px;
+}
+
+.meist-left {
+  display: flex;
+  height: 100%;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+
+  .monkey-container {
+    height: 80%;
+    width: 100%;
+  }
+
+  img {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+}
+
+.meist-right {
+  display: grid;
+  width: 70%;
+}
+
+.meist-textcontainer {
+  font-size: 30px;
+  text-align: justify;
+  padding-bottom: 60px;
+}
+
+.meist-textcontainer h1{
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.meist-info{
+  display: flex;
+}
+
+.popup-item {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Kuvatav aken */
+.popup{
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: auto;
+  background-color: rgba(107, 124, 102, 0.5);
+  text-align: center;
+  font-size: 18px;
+  padding: 15px 15px;
+  color: #fff;
+  visibility: hidden;
+  margin-left: -100px;
+
+}
+
+.open-popup{
+  visibility: visible;
+}
+
+/* Ringikujuline pilt  */
+.photo-item {
+  margin-right: 130px;
+  border: 10px;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  background-color: #6b7c66;
+  min-height: 130px;
+  width: 100%;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.footer-line {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 166px;
+  margin-right: 166px;
+}
+
+.copyright{
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.socialmedia-icons {
+  margin-right: 52px;
+}
+
+.contact {
+  display: flex;
+  margin-right: 100px;
+  font-size: 22px;
+}
+
+.footer-right {
+  display: flex;
+}
+
+.contact-icons {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-left p {
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.footer-left {
+  align-items: center;
+}
+
+/* Välimine konteiner, Hinnakiri; Live*/
+.container-narrow-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #a2b799;
+  height: 100%;
+  margin: 0% 21% 0% 21%;
+  border-radius: 15px;
+}
+
+/* Sisemine konteiner, Hinnakiri; Live*/
+.container-narrow-in {
+  background-color: rgba(107, 124, 102, 0.2);
+  width: 85%;
+  height: 75%;
+  border-radius: 20px;
+}
+
+/* Välimine konteiner, Kontakt*/
+.container-wide-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #a2b799;
+  height: 100%;
+  margin: 0% 10% 0% 10%;
+  border-radius: 15px;
+}
+
+
+
+.hinnakiri-sisu{
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.hinnakiri-sisu p {
+  font-size: 27px;
+
+}
+.hinnakiri-sisu h1 {
+  font-size: 32px;
+
+}
+
+.soodustus p {
+  margin-top: 5%;
+  opacity: 0.8;
+  font-size: 23px;
+
+}
+
+.elephant-backg{
+  bottom: 23%;
+  right: 16%;
+  width: 550px;
+  opacity: 0.1;
+  position: absolute;
+
+}
+/* Kirjeldus ja hind */
+.kokku{
+  display: flex;
+  justify-content: space-between;
+}
+
+.kontakt-center {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.kontakt-line{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.kontakt-left {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.kontakt-sisu{
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/*Vasak kontakinfo konteiner */
+.kontakt-container{
+  background-color: rgba(107, 124, 102, 0.2);
+  width: 85%;
+  height: 75%;
+  border-radius: 25px;
+}
+
+.sisu{
+  margin-bottom: 5%;
+}
+.sisu p{
+  font-size: 27px;
+}
+.sisu h1{
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+  
+
+.kontakt-right {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  margin-right: 4%;
+}
+
+/*Vormi konteiner */
+.vorm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form label{
+  font-size: 30px;
+  margin-left: 5px;
+  font-weight: 400;
+  align-items: flex-start;
+}
+
+.vorm h1{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+form input {
+  width: 600px;
+  height: 60px;
+  margin-bottom: 16px;
+  border-radius: 15px;
+  border: 0;
+  font-size: 24px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+form textarea {
+  border: 0;
+  width: 600px;
+  height: 250px;
+  margin-bottom: 16px;
+  border-radius: 15px;
+  border: 0;
+  font-size: 24px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.sisendid{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+form button {
+  background-color: rgba(107, 124, 102, 0.75);
+  color: black;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 200px;
+  height: 60px;
+  font-size: 22px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+
+.stream{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+/*Allpool olev kood on võetud järgnevast allikast:*/
+/*https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+
+.slideshow-container {
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.mySlides {display: none}
+
+/*Võetud koodijuppi Lõpp*/

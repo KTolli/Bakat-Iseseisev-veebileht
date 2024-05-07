@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="slides.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Meist - Loomaaed</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-line">
+          <div class="header-logo">
+            <img
+              src="elephant_logo.png"
+              alt="logo"
+              width="140"
+              height="110"
+            />
+
+        <div class="temp" id="weather"></div>
+          </div>
+
+          <div class="nav">
+            <a class="nav-item" href="live.html">live🔴</a>
+            <a class="nav-item" href="meist.html">meist</a>
+            <a class="nav-item" href="hinnakiri.html">hinnakiri</a>
+            <a class="nav-item" href="kontakt.html">kontakt</a>
+          </div>
+        </div>
+      </div>
+      <div class="meist-center">
+        <div class="center-line">
+          <div class="meist-left">
+            <div class="monkey-container">
+              <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="slide1.png">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="slide4.jpg">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="slide3.jpg">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+          </div>
+
+          <div class="meist-right">
+            <div class="meist-textcontainer">
+              <div class="meist_title">
+                <h1>Tere tulemast loomaaeda</h1>
+              </div>
+              <div class="meist_text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  lacinia venenatis diam quis hendrerit. Aliquam non diam sit
+                  amet lacus tristique egestas nec ut purus. Vestibulum
+                  vestibulum dolor at dictum rhoncus. Integer vel sodales ante.
+                  Etiam sit amet iaculis dolor. Nulla blandit consequat nibh
+                  malesuada vehicula. Aliquam lectus urna, posuere ut lorem ac,
+                  imperdiet rhoncus ante.  <br />
+                  <br />
+                  Cras euismod tortor vel est suscipit facilisis. Vestibulum
+                  varius orci urna, sit amet dictum purus semper id.Suspendisse
+                  ut aliquam leo. Vestibulum dapibus cursus lorem et euismod.
+                  Pellentesque dignissim ex et nisl eleifend, sed vehicula dui
+                  cursus. Morbi est leo, finibus at tortor
+                </p>
+              </div>
+            </div>
+
+            <div class="meist-info">
+              <div class="popup-item">
+                <img
+                src="circle1.jpg"
+                class="photo-item"
+                alt="logo"
+                onmouseenter="openPopup('circle1')"
+                onmouseleave="closePopup('circle1')"/>
+                <div class="popup" id="popup-circle1">
+                  <p>Koaala on Austraalia üks tuntumaid loomi. Uus-Lõuna-Walesi suguharude keeles tähendab koala "ei joo". <br>
+                    Koaala on esmaklassiline ronija ja võib elada mitu aastat puude otsas maa peale laskumata</p>
+                </div>
+              
+              </div>
+
+             
+              <div class="popup-item">
+                <img
+                src="circle2.jpg"
+                class="photo-item"
+                alt="logo"
+                onmouseenter="openPopup('circle2')"
+                onmouseleave="closePopup('circle2')"
+                />
+                <div class="popup" id="popup-circle2">
+                  <p>Hiidpanda ehk bambuskaru ehk suur panda (Ailuropoda melanoleuca) on karulaste sugukonda kuuluv imetajaliik. <br>
+                    Sõna "panda" tuleb nepalikeelsest nimetusest, mis käib punase panda (nigalya ponya) kohta ja tähendab bambusesööjat.</p>
+                </div>
+              
+              </div>
+              <div class="popup-item">
+                <img
+                src="circle3.jpg"
+                class="photo-item"
+                alt="logo"
+                onmouseenter="openPopup('circle3')"
+                onmouseleave="closePopup('circle3')"
+                />
+                <div class="popup" id="popup-circle3">
+                  <p>Gorilla (Gorilla) on inimlaste sugukonda kuuluv perekond inimahve. <br> 
+                    Gorilla on kõige suurem ahv. Isasloom kaalub kuni 250 kg ja pikkust võib tal olla 1,8 m.</p>
+                </div>
+              
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-line">
+          <div class="footer-left">
+            <div class="socialmedia">
+              <img src="facebook_icon.png" class="socialmedia-icons" alt="" />
+              <img src="instagram_icon.png" class="socialmedia-icons" alt="" />
+              <img src="youtube_icon.png" class="socialmedia-icons" alt="" />
+            </div>
+          </div>
+
+          <p class="copyright">Loomaaed © 2024</p>
+
+          <div class="footer-right">
+            <div class="contact">
+              <img src="phone_icon.png" class="contact-icons" alt="" />
+              <div class="contact_text">+372 55391092</div>
+            </div>
+            <div class="contact">
+              <img src="email_icon.png" class="contact-icons" alt="" />
+              <div class="contact_text">info@loomaaed.ee</div>
+            </div>
+            <div class="contact">
+              <img src="map_icon.png" class="contact-icons" alt="" />
+              <div class="contact_text">Ehitajate tee 180</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
