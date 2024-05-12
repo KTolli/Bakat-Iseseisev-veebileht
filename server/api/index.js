@@ -1,8 +1,16 @@
+
+
+/*Allpool oleva koodi inspiratsiooniks on kasutatud järgnevat allikat: 
+https://docs.sendgrid.com/for-developers/sending-email/quickstart-nodejs */
+
+/**/
+
+
 const express = require('express')
 const sgMail = require('@sendgrid/mail')
 const app = express()
 const cors = require('cors');
-const port = 5500
+const port = 4000
 const SENDGRID_API_KEY = "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"
 
 sgMail.setApiKey(SENDGRID_API_KEY)
@@ -10,9 +18,7 @@ sgMail.setApiKey(SENDGRID_API_KEY)
 app.use(express.json())
 app.use(cors())
 
-app.get('/', (req, res) => {
-    res.send('Test ping!')
-})
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 
 app.post('/mail', (req, res) => {
@@ -38,6 +44,7 @@ app.post('/mail', (req, res) => {
             console.error('error', error)
             res.send(false)
         })
+        
 
 })
 
