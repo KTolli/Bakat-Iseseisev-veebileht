@@ -2,5 +2,5 @@ fetch('https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=58.3770855
     const result = await response.json()
     const currentTemp = result.properties.timeseries[0].data.instant.details.air_temperature
   
-    document.getElementById('weather').innerHTML = currentTemp + '°C'
+    document.getElementById('weather').innerHTML = Math.floor(currentTemp) + '°C'
   })
